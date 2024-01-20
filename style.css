@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #edf1f4c0;
+    color: #666;
+}
+.wrapper{
+    width: 25rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 3rem auto 2rem;
+    background-color: #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+h1{
+    color: #3498db;
+    text-align: center;
+}
+form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+input, select, button{
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 3px;
+    border-radius: 0.3rem;
+    border: 2px solid rgb(207, 199, 199);
+}
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+.name, .dob{
+    display: flex;
+    gap: 0.5rem;
+}
+
+a{
+   color: #3498db;
+}
+
+p{
+    font-size: 13px;
+}
+
+.check{
+    width: 1rem;
+    cursor: pointer;
+}
+.ticked{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: large;
+    padding: 0.5rem;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #2980b9;
+}
+.last{
+    text-align: center;
+}
+.bkcd{
+    text-align: center;
+}
+
+.passwordMsg{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: none;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.head{
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+.msgc{
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+.symbols{
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.close, .tick{
+    position: absolute;
+    top: 1.8rem;
+    left: 1.9rem;
+    z-index: -10;
+}
+#close2, #tick2{
+    top: 2.75rem;
+}
+#close3, #tick3{
+    top: 3.65rem;
+}
+.m{
+    color: #e74c3c;
+    display: none;
+}
+.m1, .m6{
+    margin-top: -8px;
+}
+
+.show1{
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+.Password,.Email{
+    position: relative;
+    width: 100%;
+}
+.password-buttons,.icon{
+    position: absolute;
+    top: 12.5%;
+    right: 25px;
+    cursor: pointer;
+}
+.showPassword,.hidePassword,.email_icon{
+    position: absolute;
+    cursor: pointer;
+}
+.hidePassword{
+    display: none;
+}
+.email_icon{
+    cursor: auto;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .wrapper{
+        margin: 10% auto;
+        max-width: calc(100% - 20px);
+    }
+}
